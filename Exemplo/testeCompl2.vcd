@@ -1,0 +1,47 @@
+$date
+	Wed Jun 24 14:39:56 2015
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testeCompl2 $end
+$var wire 16 ! bus [15:0] $end
+$var reg 1 " controle $end
+$var reg 16 # in [15:0] $end
+$scope module c2 $end
+$var wire 1 $ controle $end
+$var wire 16 % in [15:0] $end
+$var reg 16 & out [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx &
+bx %
+x$
+bx #
+x"
+bx !
+$end
+#8
+b1111111111111111 &
+b1111111111111111 !
+b1 #
+b1 %
+1"
+1$
+#16
+b1111111111111101 &
+b1111111111111101 !
+b11 #
+b11 %
+#24
+b10 &
+b10 !
+b1111111111111110 #
+b1111111111111110 %
+#32

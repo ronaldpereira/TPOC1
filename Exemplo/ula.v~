@@ -1,0 +1,13 @@
+module ula(val1, val2, seletor, out);
+input [3:0] val1, val2;
+output [3:0] out;
+input [2:0] seletor;
+reg [3:0] out;
+initial begin
+	if(seletor == 3'b000) begin
+		out <= val1 + val2;
+	end else if(seletor == 3'b001) begin
+	 	out <= val1 - val2;
+	end
+end
+endmodule

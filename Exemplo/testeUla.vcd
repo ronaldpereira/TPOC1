@@ -1,0 +1,43 @@
+$date
+	Wed Jun 24 14:17:31 2015
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testeUla $end
+$var wire 16 ! bus [15:0] $end
+$var reg 16 " f1 [15:0] $end
+$var reg 16 # f2 [15:0] $end
+$var reg 1 $ opSelect $end
+$scope module u $end
+$var wire 16 % f1 [15:0] $end
+$var wire 16 & f2 [15:0] $end
+$var wire 1 ' opSelect $end
+$var reg 16 ( out [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10 (
+1'
+b1 &
+b1 %
+1$
+b1 #
+b1 "
+b10 !
+$end
+#8
+b1111111111111110 #
+b1111111111111110 &
+bx "
+bx %
+bx1 (
+bx1 !
+0$
+0'
+#16

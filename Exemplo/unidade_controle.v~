@@ -1,0 +1,40 @@
+module unidade_controle
+(
+in, 
+resetn,
+cont,
+r0_select, 
+r1_selec,
+r2_select,
+r3_select,
+r4_select,
+r5_select,
+r6_select,
+r7_select,
+r_select,
+immediate_select,
+r0_enable, 
+r1_enable,
+r2_enable,
+r3_enable,
+r4_enable,
+r5_enable,
+r6_enable,
+r7_enable,
+a_enable,
+r_enable,
+opSelect,
+clear
+);
+
+input [8:0] in;
+input [1:0] cont;
+input resetn;
+output r0_select, r1_selec, r2_select, r3_select, r4_select, r5_select, r6_select, r7_select, r_select, immediate_select;
+output r0_enable, r1_enable, r2_enable, r3_enable, r4_enable, r5_enable, r6_enable, r7_enable, a_enable, r_enable;
+output opSelect, clear;
+
+
+
+
+endmodule;
