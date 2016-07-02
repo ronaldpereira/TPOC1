@@ -1,0 +1,141 @@
+$date
+	Sat Jul  2 14:29:34 2016
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench $end
+$var wire 32 ! dataReadA [31:0] $end
+$var wire 32 " dataReadB [31:0] $end
+$var reg 1 # clear $end
+$var reg 1 $ clock $end
+$var reg 5 % readRegA [4:0] $end
+$var reg 5 & readRegB [4:0] $end
+$var reg 1 ' readWrite $end
+$var reg 32 ( writeData [31:0] $end
+$var reg 5 ) writeReg [4:0] $end
+$scope module c $end
+$var wire 1 * clear $end
+$var wire 1 + clock $end
+$var wire 5 , readRegA [4:0] $end
+$var wire 5 - readRegB [4:0] $end
+$var wire 1 . readWrite $end
+$var wire 32 / writeData [31:0] $end
+$var wire 5 0 writeReg [4:0] $end
+$var reg 32 1 dataReadA [31:0] $end
+$var reg 32 2 dataReadB [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx 2
+bx 1
+bx 0
+bx /
+x.
+bx -
+bx ,
+0+
+0*
+bx )
+bx (
+x'
+bx &
+bx %
+0$
+0#
+bx "
+bx !
+$end
+#1
+b0 2
+b0 "
+b0 1
+b0 !
+1#
+1*
+1$
+1+
+#2
+0#
+0*
+0$
+0+
+#3
+bx 2
+bx "
+b1000 1
+b1000 !
+b100 %
+b100 ,
+1$
+1+
+#4
+b111 &
+b111 -
+0$
+0+
+#5
+b10100 )
+b10100 0
+b10110 (
+b10110 /
+b1110 2
+b1110 "
+1'
+1.
+1$
+1+
+#6
+0'
+0.
+0$
+0+
+#7
+1$
+1+
+#8
+0$
+0+
+#9
+1$
+1+
+#10
+0$
+0+
+#11
+b0 2
+b0 "
+b0 1
+b0 !
+1$
+1+
+1#
+1*
+#12
+0$
+0+
+#13
+b0 2
+b0 "
+b0 1
+b0 !
+1$
+1+
+#14
+0$
+0+
+#15
+b0 2
+b0 "
+b0 1
+b0 !
+1$
+1+
+#16
+0$
+0+
