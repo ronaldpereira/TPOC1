@@ -1,10 +1,10 @@
-`include "control_unit.v"
-`include "extensor.v"
-`include "counter.v"
-`include "alu.v"
-`include "decoder.v"
-`include "multiplexer.v"
-`include "register_bank.v"
+`include "./control_unit/control_unit.v"
+`include "./extensor/extensor.v"
+`include "./counter/counter.v"
+`include "./alu/alu.v"
+`include "./decoder/decoder.v"
+`include "./multiplexer/multiplexer.v"
+`include "./register_bank/register_bank.v"
 
 module processor(clock, iin, resetn, outputProcessor);
 
