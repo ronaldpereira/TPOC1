@@ -1,7 +1,7 @@
 module decoder(out, register);
 
 	input [2:0] register;
-	output reg [7:0] out;
+	output reg [7:0] out = 0;
 
 	always @ (register)
 	begin

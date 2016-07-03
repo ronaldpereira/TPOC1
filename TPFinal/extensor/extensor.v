@@ -2,7 +2,7 @@ module extensor(iin, out);
 
 	input [15:0] iin;
 	output reg [15:0] out;
-	reg [9:0] imediate;
+	output reg [9:0] imediate;
 
 	always @ (iin)
 	begin
