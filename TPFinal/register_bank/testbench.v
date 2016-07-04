@@ -21,7 +21,7 @@ module testbench;
 		#2 enable = 1;
 		#0 in = 92;
 		#2 enable = 0;
-		#0 in = 5; // Nao podera escrever no out, pois o bit 5 do enable nao esta ativado
+		#0 in = 5; // Nao podera escrever no out, pois o enable nao esta ativado
 		#8 $finish;
 	end
 

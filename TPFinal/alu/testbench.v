@@ -1,5 +1,6 @@
 `include "alu.v"
 module testbench;
+
 	reg [15:0] a,b;
 	reg opSelect;
 	wire [15:0] bus;
@@ -17,4 +18,5 @@ module testbench;
 		# 0 b = 16'b1111111111111110;
 		# 8 $finish;
 	end
+	
 endmodule

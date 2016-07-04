@@ -20,4 +20,4 @@ module testbench;
 		#1 $finish;
 	end
 
-endmodule // testbench
+endmodule
