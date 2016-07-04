@@ -1,5 +1,5 @@
 $date
-	Wed Jun 24 14:39:56 2015
+	Mon Jul  4 01:30:11 2016
 $end
 $version
 	Icarus Verilog
@@ -7,13 +7,13 @@ $end
 $timescale
 	1s
 $end
-$scope module testeCompl2 $end
-$var wire 16 ! bus [15:0] $end
-$var reg 1 " controle $end
-$var reg 16 # in [15:0] $end
-$scope module c2 $end
-$var wire 1 $ controle $end
-$var wire 16 % in [15:0] $end
+$scope module testbench $end
+$var wire 16 ! out [15:0] $end
+$var reg 1 " enable $end
+$var reg 16 # iin [15:0] $end
+$scope module comp $end
+$var wire 1 $ enable $end
+$var wire 16 % iin [15:0] $end
 $var reg 16 & out [15:0] $end
 $upscope $end
 $upscope $end
