@@ -1,5 +1,5 @@
 Analysis & Synthesis report for processor
-Mon Jul 04 15:34:53 2016
+Mon Jul 04 20:14:08 2016
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
@@ -47,7 +47,7 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Jul 04 15:34:53 2016      ;
+; Analysis & Synthesis Status     ; Successful - Mon Jul 04 20:14:08 2016      ;
 ; Quartus II 64-Bit Version       ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
 ; Revision Name                   ; processor                                  ;
 ; Top-level Entity Name           ; processor                                  ;
@@ -172,21 +172,21 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                             ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                               ; Library ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------+---------+
-; register_bank/register_bank.v    ; yes             ; User Verilog HDL File  ; C:/Users/user/Downloads/TPOC1-master/TPFinal/register_bank/register_bank.v ;         ;
-; multiplexer/multiplexer.v        ; yes             ; User Verilog HDL File  ; C:/Users/user/Downloads/TPOC1-master/TPFinal/multiplexer/multiplexer.v     ;         ;
-; extensor/extensor.v              ; yes             ; User Verilog HDL File  ; C:/Users/user/Downloads/TPOC1-master/TPFinal/extensor/extensor.v           ;         ;
-; decoder/decoder.v                ; yes             ; User Verilog HDL File  ; C:/Users/user/Downloads/TPOC1-master/TPFinal/decoder/decoder.v             ;         ;
-; counter/counter.v                ; yes             ; User Verilog HDL File  ; C:/Users/user/Downloads/TPOC1-master/TPFinal/counter/counter.v             ;         ;
-; control_unit/control_unit.v      ; yes             ; User Verilog HDL File  ; C:/Users/user/Downloads/TPOC1-master/TPFinal/control_unit/control_unit.v   ;         ;
-; complement/complement.v          ; yes             ; User Verilog HDL File  ; C:/Users/user/Downloads/TPOC1-master/TPFinal/complement/complement.v       ;         ;
-; alu/alu.v                        ; yes             ; User Verilog HDL File  ; C:/Users/user/Downloads/TPOC1-master/TPFinal/alu/alu.v                     ;         ;
-; processor.v                      ; yes             ; User Verilog HDL File  ; C:/Users/user/Downloads/TPOC1-master/TPFinal/processor.v                   ;         ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                          ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                            ; Library ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------+---------+
+; register_bank/register_bank.v    ; yes             ; User Verilog HDL File  ; C:/Users/user/Downloads/TPOC1-master/TPFinal - Quartus II/register_bank/register_bank.v ;         ;
+; multiplexer/multiplexer.v        ; yes             ; User Verilog HDL File  ; C:/Users/user/Downloads/TPOC1-master/TPFinal - Quartus II/multiplexer/multiplexer.v     ;         ;
+; extensor/extensor.v              ; yes             ; User Verilog HDL File  ; C:/Users/user/Downloads/TPOC1-master/TPFinal - Quartus II/extensor/extensor.v           ;         ;
+; decoder/decoder.v                ; yes             ; User Verilog HDL File  ; C:/Users/user/Downloads/TPOC1-master/TPFinal - Quartus II/decoder/decoder.v             ;         ;
+; counter/counter.v                ; yes             ; User Verilog HDL File  ; C:/Users/user/Downloads/TPOC1-master/TPFinal - Quartus II/counter/counter.v             ;         ;
+; control_unit/control_unit.v      ; yes             ; User Verilog HDL File  ; C:/Users/user/Downloads/TPOC1-master/TPFinal - Quartus II/control_unit/control_unit.v   ;         ;
+; complement/complement.v          ; yes             ; User Verilog HDL File  ; C:/Users/user/Downloads/TPOC1-master/TPFinal - Quartus II/complement/complement.v       ;         ;
+; alu/alu.v                        ; yes             ; User Verilog HDL File  ; C:/Users/user/Downloads/TPOC1-master/TPFinal - Quartus II/alu/alu.v                     ;         ;
+; processor.v                      ; yes             ; User Verilog HDL File  ; C:/Users/user/Downloads/TPOC1-master/TPFinal - Quartus II/processor.v                   ;         ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -357,7 +357,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
-    Info: Processing started: Mon Jul 04 15:34:02 2016
+    Info: Processing started: Mon Jul 04 20:13:44 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processor -c processor
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file register_bank/register_bank.v
@@ -526,7 +526,7 @@ Warning (13012): Latch control_unit:controle|r0_enable has unsafe behavior
 Warning (13012): Latch control_unit:controle|a_enable has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal counter:contador|out[0]
 Info (286030): Timing-Driven Synthesis is running
-Info (144001): Generated suppressed messages file C:/Users/user/Downloads/TPOC1-master/TPFinal/output_files/processor.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/user/Downloads/TPOC1-master/TPFinal - Quartus II/output_files/processor.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
@@ -536,15 +536,15 @@ Info (21057): Implemented 340 device resources after synthesis - the final resou
     Info (21059): Implemented 16 output pins
     Info (21061): Implemented 306 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 113 warnings
-    Info: Peak virtual memory: 720 megabytes
-    Info: Processing ended: Mon Jul 04 15:34:53 2016
-    Info: Elapsed time: 00:00:51
-    Info: Total CPU time (on all processors): 00:01:56
+    Info: Peak virtual memory: 705 megabytes
+    Info: Processing ended: Mon Jul 04 20:14:08 2016
+    Info: Elapsed time: 00:00:24
+    Info: Total CPU time (on all processors): 00:00:52
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/user/Downloads/TPOC1-master/TPFinal/output_files/processor.map.smsg.
+The suppressed messages can be found in C:/Users/user/Downloads/TPOC1-master/TPFinal - Quartus II/output_files/processor.map.smsg.
 
 

@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 15.0.0 Build 145 04/22/2015 SJ Web Edition"
 
--- DATE "07/04/2016 17:39:08"
+-- DATE "07/04/2016 20:17:09"
 
 -- 
 -- Device: Altera 5CGXFC7C7F23C8 Package FBGA484
@@ -366,6 +366,20 @@ SIGNAL \Register3|out\ : std_logic_vector(15 DOWNTO 0);
 SIGNAL \Register1|out\ : std_logic_vector(15 DOWNTO 0);
 SIGNAL \Register0|out\ : std_logic_vector(15 DOWNTO 0);
 SIGNAL \RegisterA|out\ : std_logic_vector(15 DOWNTO 0);
+SIGNAL \comp|ALT_INV_Add0~53_sumout\ : std_logic;
+SIGNAL \comp|ALT_INV_Add0~49_sumout\ : std_logic;
+SIGNAL \comp|ALT_INV_Add0~45_sumout\ : std_logic;
+SIGNAL \comp|ALT_INV_Add0~41_sumout\ : std_logic;
+SIGNAL \comp|ALT_INV_Add0~37_sumout\ : std_logic;
+SIGNAL \comp|ALT_INV_Add0~33_sumout\ : std_logic;
+SIGNAL \comp|ALT_INV_Add0~29_sumout\ : std_logic;
+SIGNAL \comp|ALT_INV_Add0~25_sumout\ : std_logic;
+SIGNAL \comp|ALT_INV_Add0~21_sumout\ : std_logic;
+SIGNAL \comp|ALT_INV_Add0~17_sumout\ : std_logic;
+SIGNAL \comp|ALT_INV_Add0~13_sumout\ : std_logic;
+SIGNAL \comp|ALT_INV_Add0~9_sumout\ : std_logic;
+SIGNAL \comp|ALT_INV_Add0~5_sumout\ : std_logic;
+SIGNAL \comp|ALT_INV_Add0~1_sumout\ : std_logic;
 SIGNAL \ALT_INV_clock~inputCLKENA0_outclk\ : std_logic;
 SIGNAL \ALT_INV_iin[14]~input_o\ : std_logic;
 SIGNAL \ALT_INV_iin[13]~input_o\ : std_logic;
@@ -517,20 +531,6 @@ SIGNAL \alu|ALT_INV_Add0~1_sumout\ : std_logic;
 SIGNAL \RegisterR|ALT_INV_out\ : std_logic_vector(15 DOWNTO 0);
 SIGNAL \comp|ALT_INV_Add0~61_sumout\ : std_logic;
 SIGNAL \comp|ALT_INV_Add0~57_sumout\ : std_logic;
-SIGNAL \comp|ALT_INV_Add0~53_sumout\ : std_logic;
-SIGNAL \comp|ALT_INV_Add0~49_sumout\ : std_logic;
-SIGNAL \comp|ALT_INV_Add0~45_sumout\ : std_logic;
-SIGNAL \comp|ALT_INV_Add0~41_sumout\ : std_logic;
-SIGNAL \comp|ALT_INV_Add0~37_sumout\ : std_logic;
-SIGNAL \comp|ALT_INV_Add0~33_sumout\ : std_logic;
-SIGNAL \comp|ALT_INV_Add0~29_sumout\ : std_logic;
-SIGNAL \comp|ALT_INV_Add0~25_sumout\ : std_logic;
-SIGNAL \comp|ALT_INV_Add0~21_sumout\ : std_logic;
-SIGNAL \comp|ALT_INV_Add0~17_sumout\ : std_logic;
-SIGNAL \comp|ALT_INV_Add0~13_sumout\ : std_logic;
-SIGNAL \comp|ALT_INV_Add0~9_sumout\ : std_logic;
-SIGNAL \comp|ALT_INV_Add0~5_sumout\ : std_logic;
-SIGNAL \comp|ALT_INV_Add0~1_sumout\ : std_logic;
 
 BEGIN
 
@@ -541,6 +541,20 @@ OutputProcessor <= ww_OutputProcessor;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
+\comp|ALT_INV_Add0~53_sumout\ <= NOT \comp|Add0~53_sumout\;
+\comp|ALT_INV_Add0~49_sumout\ <= NOT \comp|Add0~49_sumout\;
+\comp|ALT_INV_Add0~45_sumout\ <= NOT \comp|Add0~45_sumout\;
+\comp|ALT_INV_Add0~41_sumout\ <= NOT \comp|Add0~41_sumout\;
+\comp|ALT_INV_Add0~37_sumout\ <= NOT \comp|Add0~37_sumout\;
+\comp|ALT_INV_Add0~33_sumout\ <= NOT \comp|Add0~33_sumout\;
+\comp|ALT_INV_Add0~29_sumout\ <= NOT \comp|Add0~29_sumout\;
+\comp|ALT_INV_Add0~25_sumout\ <= NOT \comp|Add0~25_sumout\;
+\comp|ALT_INV_Add0~21_sumout\ <= NOT \comp|Add0~21_sumout\;
+\comp|ALT_INV_Add0~17_sumout\ <= NOT \comp|Add0~17_sumout\;
+\comp|ALT_INV_Add0~13_sumout\ <= NOT \comp|Add0~13_sumout\;
+\comp|ALT_INV_Add0~9_sumout\ <= NOT \comp|Add0~9_sumout\;
+\comp|ALT_INV_Add0~5_sumout\ <= NOT \comp|Add0~5_sumout\;
+\comp|ALT_INV_Add0~1_sumout\ <= NOT \comp|Add0~1_sumout\;
 \ALT_INV_clock~inputCLKENA0_outclk\ <= NOT \clock~inputCLKENA0_outclk\;
 \ALT_INV_iin[14]~input_o\ <= NOT \iin[14]~input_o\;
 \ALT_INV_iin[13]~input_o\ <= NOT \iin[13]~input_o\;
@@ -843,20 +857,6 @@ ww_devpor <= devpor;
 \RegisterR|ALT_INV_out\(0) <= NOT \RegisterR|out\(0);
 \comp|ALT_INV_Add0~61_sumout\ <= NOT \comp|Add0~61_sumout\;
 \comp|ALT_INV_Add0~57_sumout\ <= NOT \comp|Add0~57_sumout\;
-\comp|ALT_INV_Add0~53_sumout\ <= NOT \comp|Add0~53_sumout\;
-\comp|ALT_INV_Add0~49_sumout\ <= NOT \comp|Add0~49_sumout\;
-\comp|ALT_INV_Add0~45_sumout\ <= NOT \comp|Add0~45_sumout\;
-\comp|ALT_INV_Add0~41_sumout\ <= NOT \comp|Add0~41_sumout\;
-\comp|ALT_INV_Add0~37_sumout\ <= NOT \comp|Add0~37_sumout\;
-\comp|ALT_INV_Add0~33_sumout\ <= NOT \comp|Add0~33_sumout\;
-\comp|ALT_INV_Add0~29_sumout\ <= NOT \comp|Add0~29_sumout\;
-\comp|ALT_INV_Add0~25_sumout\ <= NOT \comp|Add0~25_sumout\;
-\comp|ALT_INV_Add0~21_sumout\ <= NOT \comp|Add0~21_sumout\;
-\comp|ALT_INV_Add0~17_sumout\ <= NOT \comp|Add0~17_sumout\;
-\comp|ALT_INV_Add0~13_sumout\ <= NOT \comp|Add0~13_sumout\;
-\comp|ALT_INV_Add0~9_sumout\ <= NOT \comp|Add0~9_sumout\;
-\comp|ALT_INV_Add0~5_sumout\ <= NOT \comp|Add0~5_sumout\;
-\comp|ALT_INV_Add0~1_sumout\ <= NOT \comp|Add0~1_sumout\;
 
 -- Location: IOOBUF_X89_Y6_N22
 \OutputProcessor[0]~output\ : cyclonev_io_obuf

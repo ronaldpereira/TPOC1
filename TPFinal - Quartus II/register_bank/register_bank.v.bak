@@ -7,7 +7,9 @@ module register_bank(in, enable, clock, out);
 	always @ (posedge clock)
 	begin
 		if(enable)
+		begin
 			out <= in;
+		end
 	end
 
 endmodule
