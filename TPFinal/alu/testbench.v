@@ -1,31 +1,20 @@
 `include "alu.v"
-
 module testbench;
-
-	reg clock = 0, clear = 0;
-	reg [15:0] inputA, inputB;
-	reg [1:0] opCode;
-	wire [15:0] result;
-
-	always #1 clock = !clock;
+	reg [15:0] a,b;
+	reg opSelect;
+	wire [15:0] bus;
 
 	initial $dumpfile("testbench.vcd");
 	initial $dumpvars(0, testbench);
+	alu alu(a, b, opSelect, bus);
 
-	alu c(result, opCode, inputA, inputB);
-
-	initial
-	begin
-		#0 opCode = 2'b00; // 805 + 302 = 1107
-		#0 inputA = 16'b0000001100100101;
-		#0 inputB = 16'b0000000100101110;
-		#1 inputA = 16'b0000001100100101;
-		#0 inputB = 16'b0000000100101110;
-		#0 opCode = 3'b01; // 805 - 302 = 503
-		#1 inputA = 16'b0000000100101110;
-		#0 inputB = 16'b0000000100101110; // Expected = 1111111011010001
-		#0 opCode = 2'b10;
-		#2 $finish;
+	initial begin
+		# 0 opSelect = 1'b1;
+		# 0 a = 16'b0000000000000001;
+		# 0 b = 16'b0000000000000001;
+		# 8 opSelect = 1'b0;
+		# 0 a = 16'bxxxxxxxxxxxxxxxx;
+		# 0 b = 16'b1111111111111110;
+		# 8 $finish;
 	end
-
-endmodule // testbench
+endmodule

@@ -1,16 +1,21 @@
-module alu(a, b, OpSelect, result);
+module alu(a, b, opSelect, out);
 
 	input [15:0] a, b;
-	input OpSelect;
-	output reg [15:0] result;
+	output reg [15:0] out;
+	input opSelect;
 
-	always @ ( * )
+	always @(opSelect or a or b)
 	begin
-		case (OpSelect)
-			1'b1: result = a + b;
-			1'b0: result = a ~& b;
-			default: result = 0;
-		endcase
+
+		if(opSelect == 1)
+		begin
+			out = a + b;
+		end
+		else if(opSelect == 0)
+		begin
+			out = a ~& b;
+		end
+
 	end
 
 endmodule
