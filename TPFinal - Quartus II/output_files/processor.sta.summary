@@ -1,0 +1,149 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'clock'
+Slack : -8.672
+TNS   : -1130.129
+
+Type  : Slow 1100mV 85C Model Setup 'counter:contador|out[1]'
+Slack : -6.583
+TNS   : -72.289
+
+Type  : Slow 1100mV 85C Model Setup 'counter:contador|out[0]'
+Slack : -6.308
+TNS   : -66.271
+
+Type  : Slow 1100mV 85C Model Hold 'clock'
+Slack : 0.157
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'counter:contador|out[0]'
+Slack : 0.177
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'counter:contador|out[1]'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock'
+Slack : -0.724
+TNS   : -180.782
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'counter:contador|out[1]'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'counter:contador|out[0]'
+Slack : 0.288
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'clock'
+Slack : -8.763
+TNS   : -1133.432
+
+Type  : Slow 1100mV 0C Model Setup 'counter:contador|out[1]'
+Slack : -6.400
+TNS   : -72.605
+
+Type  : Slow 1100mV 0C Model Setup 'counter:contador|out[0]'
+Slack : -6.032
+TNS   : -66.409
+
+Type  : Slow 1100mV 0C Model Hold 'clock'
+Slack : -0.159
+TNS   : -0.296
+
+Type  : Slow 1100mV 0C Model Hold 'counter:contador|out[0]'
+Slack : 0.164
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'counter:contador|out[1]'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock'
+Slack : -0.724
+TNS   : -180.129
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'counter:contador|out[1]'
+Slack : 0.149
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'counter:contador|out[0]'
+Slack : 0.238
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'clock'
+Slack : -3.376
+TNS   : -433.432
+
+Type  : Fast 1100mV 85C Model Setup 'counter:contador|out[1]'
+Slack : -2.888
+TNS   : -24.943
+
+Type  : Fast 1100mV 85C Model Setup 'counter:contador|out[0]'
+Slack : -2.828
+TNS   : -23.154
+
+Type  : Fast 1100mV 85C Model Hold 'clock'
+Slack : 0.000
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'counter:contador|out[1]'
+Slack : 0.063
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'counter:contador|out[0]'
+Slack : 0.134
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock'
+Slack : -0.093
+TNS   : -14.412
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'counter:contador|out[1]'
+Slack : 0.204
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'counter:contador|out[0]'
+Slack : 0.239
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clock'
+Slack : -2.941
+TNS   : -376.796
+
+Type  : Fast 1100mV 0C Model Setup 'counter:contador|out[1]'
+Slack : -2.516
+TNS   : -21.571
+
+Type  : Fast 1100mV 0C Model Setup 'counter:contador|out[0]'
+Slack : -2.452
+TNS   : -19.964
+
+Type  : Fast 1100mV 0C Model Hold 'clock'
+Slack : -0.112
+TNS   : -0.730
+
+Type  : Fast 1100mV 0C Model Hold 'counter:contador|out[1]'
+Slack : 0.087
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'counter:contador|out[0]'
+Slack : 0.125
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock'
+Slack : -0.092
+TNS   : -14.382
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'counter:contador|out[1]'
+Slack : 0.249
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'counter:contador|out[0]'
+Slack : 0.291
+TNS   : 0.000
+
+------------------------------------------------------------

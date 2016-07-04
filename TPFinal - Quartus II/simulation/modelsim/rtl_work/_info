@@ -1,0 +1,199 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/user/Downloads/TPOC1-master/TPFinal/simulation/modelsim
+valu
+!s110 1467657137
+!i10b 1
+!s100 zhWW68B0a[?WH81T5Ig7l1
+IVeA9SOTNiiNo[WFSN6Sko0
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1467648687
+8C:/Users/user/Downloads/TPOC1-master/TPFinal/alu/alu.v
+FC:/Users/user/Downloads/TPOC1-master/TPFinal/alu/alu.v
+L0 1
+Z2 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1467657137.009000
+!s107 C:/Users/user/Downloads/TPOC1-master/TPFinal/alu/alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/user/Downloads/TPOC1-master/TPFinal/alu|C:/Users/user/Downloads/TPOC1-master/TPFinal/alu/alu.v|
+!i113 1
+Z3 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/user/Downloads/TPOC1-master/TPFinal/alu
+vcomplement
+!s110 1467657135
+!i10b 1
+!s100 f0YLc9gORO1FS^RmF2bVE2
+IO:L7lE[T6FWn;e5eWNW7U2
+R1
+R0
+w1467646421
+8C:/Users/user/Downloads/TPOC1-master/TPFinal/complement/complement.v
+FC:/Users/user/Downloads/TPOC1-master/TPFinal/complement/complement.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1467657135.145000
+!s107 C:/Users/user/Downloads/TPOC1-master/TPFinal/complement/complement.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/user/Downloads/TPOC1-master/TPFinal/complement|C:/Users/user/Downloads/TPOC1-master/TPFinal/complement/complement.v|
+!i113 1
+R3
+!s92 -vlog01compat -work work +incdir+C:/Users/user/Downloads/TPOC1-master/TPFinal/complement
+vcontrol_unit
+!s110 1467657133
+!i10b 1
+!s100 miAW0a>:9i5@T06]:2ZOb3
+IW:W:6ShRMb=2XjBFi5j=m0
+R1
+R0
+w1467648230
+8C:/Users/user/Downloads/TPOC1-master/TPFinal/control_unit/control_unit.v
+FC:/Users/user/Downloads/TPOC1-master/TPFinal/control_unit/control_unit.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1467657133.375000
+!s107 C:/Users/user/Downloads/TPOC1-master/TPFinal/control_unit/control_unit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/user/Downloads/TPOC1-master/TPFinal/control_unit|C:/Users/user/Downloads/TPOC1-master/TPFinal/control_unit/control_unit.v|
+!i113 1
+R3
+!s92 -vlog01compat -work work +incdir+C:/Users/user/Downloads/TPOC1-master/TPFinal/control_unit
+vcounter
+!s110 1467657131
+!i10b 1
+!s100 KOf8k0SMNiZW?:[`[^LGG0
+I`;HbcY3a7h_]8hb0MJzCI0
+R1
+R0
+w1467646170
+8C:/Users/user/Downloads/TPOC1-master/TPFinal/counter/counter.v
+FC:/Users/user/Downloads/TPOC1-master/TPFinal/counter/counter.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1467657131.725000
+!s107 C:/Users/user/Downloads/TPOC1-master/TPFinal/counter/counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/user/Downloads/TPOC1-master/TPFinal/counter|C:/Users/user/Downloads/TPOC1-master/TPFinal/counter/counter.v|
+!i113 1
+R3
+!s92 -vlog01compat -work work +incdir+C:/Users/user/Downloads/TPOC1-master/TPFinal/counter
+vdecoder
+!s110 1467657129
+!i10b 1
+!s100 _WIEkT7U2@H[Tc`7L:liI3
+I7H5;5H]4?OdLNcXk^WC7^2
+R1
+R0
+w1467646158
+8C:/Users/user/Downloads/TPOC1-master/TPFinal/decoder/decoder.v
+FC:/Users/user/Downloads/TPOC1-master/TPFinal/decoder/decoder.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1467657129.945000
+!s107 C:/Users/user/Downloads/TPOC1-master/TPFinal/decoder/decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/user/Downloads/TPOC1-master/TPFinal/decoder|C:/Users/user/Downloads/TPOC1-master/TPFinal/decoder/decoder.v|
+!i113 1
+R3
+!s92 -vlog01compat -work work +incdir+C:/Users/user/Downloads/TPOC1-master/TPFinal/decoder
+vextensor
+!s110 1467657128
+!i10b 1
+!s100 HiVR3]@A`bRFD<XicDe6W0
+I[bO?aA1=[VEIPIZ=B3c>61
+R1
+R0
+w1467647651
+8C:/Users/user/Downloads/TPOC1-master/TPFinal/extensor/extensor.v
+FC:/Users/user/Downloads/TPOC1-master/TPFinal/extensor/extensor.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1467657128.214000
+!s107 C:/Users/user/Downloads/TPOC1-master/TPFinal/extensor/extensor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/user/Downloads/TPOC1-master/TPFinal/extensor|C:/Users/user/Downloads/TPOC1-master/TPFinal/extensor/extensor.v|
+!i113 1
+R3
+!s92 -vlog01compat -work work +incdir+C:/Users/user/Downloads/TPOC1-master/TPFinal/extensor
+vmultiplexer
+!s110 1467657126
+!i10b 1
+!s100 Qhj^?VF:kcUoI=aIZZ;W_3
+I>c1SMJP8ha5^z[XI74n[;3
+R1
+R0
+w1467648984
+8C:/Users/user/Downloads/TPOC1-master/TPFinal/multiplexer/multiplexer.v
+FC:/Users/user/Downloads/TPOC1-master/TPFinal/multiplexer/multiplexer.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1467657126.428000
+!s107 C:/Users/user/Downloads/TPOC1-master/TPFinal/multiplexer/multiplexer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/user/Downloads/TPOC1-master/TPFinal/multiplexer|C:/Users/user/Downloads/TPOC1-master/TPFinal/multiplexer/multiplexer.v|
+!i113 1
+R3
+!s92 -vlog01compat -work work +incdir+C:/Users/user/Downloads/TPOC1-master/TPFinal/multiplexer
+vprocessor
+!s110 1467657140
+!i10b 1
+!s100 1O02fJR_SO4Sm;Ef@1^@11
+IoeW6]V<k7Tz`09k1k51?D0
+R1
+R0
+w1467647788
+8C:/Users/user/Downloads/TPOC1-master/TPFinal/processor.v
+FC:/Users/user/Downloads/TPOC1-master/TPFinal/processor.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1467657140.437000
+!s107 C:/Users/user/Downloads/TPOC1-master/TPFinal/processor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/user/Downloads/TPOC1-master/TPFinal|C:/Users/user/Downloads/TPOC1-master/TPFinal/processor.v|
+!i113 1
+R3
+!s92 -vlog01compat -work work +incdir+C:/Users/user/Downloads/TPOC1-master/TPFinal
+vregister_bank
+!s110 1467657124
+!i10b 1
+!s100 eiHM=N11ePVm`KXA_H=Kn0
+I?LkUbM@Z2zg65>SiBVn[?3
+R1
+R0
+w1467646022
+8C:/Users/user/Downloads/TPOC1-master/TPFinal/register_bank/register_bank.v
+FC:/Users/user/Downloads/TPOC1-master/TPFinal/register_bank/register_bank.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1467657124.638000
+!s107 C:/Users/user/Downloads/TPOC1-master/TPFinal/register_bank/register_bank.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/user/Downloads/TPOC1-master/TPFinal/register_bank|C:/Users/user/Downloads/TPOC1-master/TPFinal/register_bank/register_bank.v|
+!i113 1
+R3
+!s92 -vlog01compat -work work +incdir+C:/Users/user/Downloads/TPOC1-master/TPFinal/register_bank

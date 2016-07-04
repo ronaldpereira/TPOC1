@@ -1,0 +1,107 @@
+# Reading C:/altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# do processor_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/user/Downloads/TPOC1-master/TPFinal/register_bank {C:/Users/user/Downloads/TPOC1-master/TPFinal/register_bank/register_bank.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:32:04 on Jul 04,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/user/Downloads/TPOC1-master/TPFinal/register_bank" C:/Users/user/Downloads/TPOC1-master/TPFinal/register_bank/register_bank.v 
+# -- Compiling module register_bank
+# 
+# Top level modules:
+# 	register_bank
+# End time: 15:32:04 on Jul 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/user/Downloads/TPOC1-master/TPFinal/multiplexer {C:/Users/user/Downloads/TPOC1-master/TPFinal/multiplexer/multiplexer.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:32:06 on Jul 04,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/user/Downloads/TPOC1-master/TPFinal/multiplexer" C:/Users/user/Downloads/TPOC1-master/TPFinal/multiplexer/multiplexer.v 
+# -- Compiling module multiplexer
+# 
+# Top level modules:
+# 	multiplexer
+# End time: 15:32:06 on Jul 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/user/Downloads/TPOC1-master/TPFinal/extensor {C:/Users/user/Downloads/TPOC1-master/TPFinal/extensor/extensor.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:32:08 on Jul 04,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/user/Downloads/TPOC1-master/TPFinal/extensor" C:/Users/user/Downloads/TPOC1-master/TPFinal/extensor/extensor.v 
+# -- Compiling module extensor
+# 
+# Top level modules:
+# 	extensor
+# End time: 15:32:08 on Jul 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/user/Downloads/TPOC1-master/TPFinal/decoder {C:/Users/user/Downloads/TPOC1-master/TPFinal/decoder/decoder.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:32:09 on Jul 04,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/user/Downloads/TPOC1-master/TPFinal/decoder" C:/Users/user/Downloads/TPOC1-master/TPFinal/decoder/decoder.v 
+# -- Compiling module decoder
+# 
+# Top level modules:
+# 	decoder
+# End time: 15:32:10 on Jul 04,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/user/Downloads/TPOC1-master/TPFinal/counter {C:/Users/user/Downloads/TPOC1-master/TPFinal/counter/counter.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:32:11 on Jul 04,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/user/Downloads/TPOC1-master/TPFinal/counter" C:/Users/user/Downloads/TPOC1-master/TPFinal/counter/counter.v 
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# End time: 15:32:11 on Jul 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/user/Downloads/TPOC1-master/TPFinal/control_unit {C:/Users/user/Downloads/TPOC1-master/TPFinal/control_unit/control_unit.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:32:13 on Jul 04,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/user/Downloads/TPOC1-master/TPFinal/control_unit" C:/Users/user/Downloads/TPOC1-master/TPFinal/control_unit/control_unit.v 
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# End time: 15:32:13 on Jul 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/user/Downloads/TPOC1-master/TPFinal/complement {C:/Users/user/Downloads/TPOC1-master/TPFinal/complement/complement.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:32:15 on Jul 04,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/user/Downloads/TPOC1-master/TPFinal/complement" C:/Users/user/Downloads/TPOC1-master/TPFinal/complement/complement.v 
+# -- Compiling module complement
+# 
+# Top level modules:
+# 	complement
+# End time: 15:32:15 on Jul 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/user/Downloads/TPOC1-master/TPFinal/alu {C:/Users/user/Downloads/TPOC1-master/TPFinal/alu/alu.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:32:16 on Jul 04,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/user/Downloads/TPOC1-master/TPFinal/alu" C:/Users/user/Downloads/TPOC1-master/TPFinal/alu/alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 15:32:17 on Jul 04,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/user/Downloads/TPOC1-master/TPFinal {C:/Users/user/Downloads/TPOC1-master/TPFinal/processor.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:32:20 on Jul 04,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/user/Downloads/TPOC1-master/TPFinal" C:/Users/user/Downloads/TPOC1-master/TPFinal/processor.v 
+# -- Compiling module processor
+# 
+# Top level modules:
+# 	processor
+# End time: 15:32:20 on Jul 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+dataset reload -f
+# Dataset not found: 
