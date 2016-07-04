@@ -8,7 +8,7 @@ module testbench;
 	initial $dumpfile("testbench.vcd");
 	initial $dumpvars(0, testbench);
 
-	decoder d(result, register);
+	decoder d(register, result);
 
 	initial
 	begin
