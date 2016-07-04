@@ -6,16 +6,12 @@ module alu(a, b, opSelect, out);
 
 	always @(opSelect or a or b)
 	begin
-
-		if(opSelect == 1)
-		begin
-			out = a + b;
-		end
-		else if(opSelect == 0)
-		begin
-			out = a ~& b;
-		end
-
+		case(opSelect)
+			1'b1:
+				out = a + b; // Caso seja subtração, o registrador virá negado para a entrada da ALU
+			1'b0:
+				out = a ~& b; // Operação de NAND
+		endcase
 	end
 
 endmodule

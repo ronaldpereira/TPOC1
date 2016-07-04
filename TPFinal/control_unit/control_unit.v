@@ -3,37 +3,35 @@ module control_unit(in, resetn, count, r0_select, r1_select, r2_select, r3_selec
 	input [8:0] in;
 	input [1:0] count;
 	input resetn;
-	output reg r0_select, r1_select, r2_select, r3_select, r4_select, r5_select, r6_select, r7_select, r_select, immediate_select;
-	output reg r0_enable, r1_enable, r2_enable, r3_enable, r4_enable, r5_enable, r6_enable, r7_enable, a_enable, r_enable, clear;
-	output reg opSelect, negativo;
-	reg [2:0] operation;
-	reg [2:0] registera, registerb;
+	wire [7:0] outRegistera, outRegisterb, outEnableRegister;
+	output reg r0_select, r1_select, r2_select, r3_select, r4_select, r5_select, r6_select, r7_select, r_select, immediate_select, r0_enable, r1_enable, r2_enable, r3_enable, r4_enable, r5_enable, r6_enable, r7_enable, a_enable, r_enable, clear, opSelect, negativo;
+	reg [2:0] operation, registera, registerb;
 	reg [1:0] status;
 	reg saida, negar;
-	wire [7:0] outRegistera, outRegisterb, outEnableRegister;
 
-	decoder d1(registera, outRegistera);
-	decoder d2(registerb, outRegisterb);
-	decoder d3(registera, outEnableRegister);
-
+	decoder d1(registera, outRegistera); // Decodifica o enable do registrador a
+	decoder d2(registerb, outRegisterb); // Decodifica o enable do registrador b
+	decoder d3(registera, outEnableRegister); // Decodifica o enable do registrador a para armazenar o resultado
 
 	always @(posedge resetn)
 	begin
-		if(resetn == 1)
+		if(resetn)
 			clear <= 1;
+
 		else
 			clear <= 0;
 	end
 
 	always @(in or count)
 	begin
-		operation = {in[8], in[7], in[6]};
-		registera = {in[5], in[4], in[3]};
-		registerb = {in[2], in[1], in[0]};
 		clear <= 0;
+		operation = in[8:6];
+		registera = in[5:3];
+		registerb = in[2:0];
+
 		case (count)
 				2'b00:
-				begin// Primeiro Ciclo
+				begin // Primeiro Ciclo
 					r_select <= 0;
 					r0_enable <= 0;
 					r1_enable <= 0;
@@ -46,7 +44,7 @@ module control_unit(in, resetn, count, r0_select, r1_select, r2_select, r3_selec
 
 					if(operation == 3'b111)
 					begin
-							opSelect <= 1; //REP
+							opSelect <= 1; // REP
 							status <= 2'b01;
 							negar <= 0;
 							saida <= 0;
@@ -54,15 +52,15 @@ module control_unit(in, resetn, count, r0_select, r1_select, r2_select, r3_selec
 
 					else if(operation == 3'b101)
 					begin
-							opSelect <= 1; //LDI
-							status <= 2'b11;
-							negar <= 0;
-							saida <= 0;
+						opSelect <= 1; // LDI
+						status <= 2'b11;
+						negar <= 0;
+						saida <= 0;
 					end
 
 					else if(operation == 3'b000)
 					begin
-						opSelect <= 1;// ADD
+						opSelect <= 1; // ADD
 						status <= 2'b00;
 						negar <= 0;
 						saida <= 0;
@@ -70,34 +68,34 @@ module control_unit(in, resetn, count, r0_select, r1_select, r2_select, r3_selec
 
 					else if(operation == 3'b001)
 					begin
-							opSelect <= 1;// SUB
-							status <= 2'b00;
-							negar <= 1;
-							saida <= 0;
+						opSelect <= 1; // SUB
+						status <= 2'b00;
+						negar <= 1;
+						saida <= 0;
 					end
 
 					else if(operation == 3'b010)
 					begin
-							opSelect <= 0; //NAN
-							status <= 2'b00;
-							negar <= 0;
-							saida <= 0;
+						opSelect <= 0; // NAN
+						status <= 2'b00;
+						negar <= 0;
+						saida <= 0;
 					end
 
 					else if(operation == 3'b100)
 					begin
-							opSelect <= 1; //OUT
-							status <= 2'b01;
-							negar <= 0;
-							saida <= 1;
+						opSelect <= 1; // OUT
+						status <= 2'b01;
+						negar <= 0;
+						saida <= 1;
 					end
 				end
 
 				2'b01:
-				begin// Segundo Ciclo
+				begin // Segundo Ciclo
 					a_enable <= 1;
 
-					if(status == 2'b00 || status == 2'b10 && saida == 1)
+					if((status == 2'b00 || status == 2'b10) && saida)
 					begin
 						immediate_select <= 0;
 						r_select <= 0;
@@ -110,6 +108,7 @@ module control_unit(in, resetn, count, r0_select, r1_select, r2_select, r3_selec
 						r6_select <= outRegistera[1];
 						r7_select <= outRegistera[0];
 					end
+
 					else if(status == 2'b01 || 2'b11)
 					begin
 						immediate_select <= 0;
@@ -125,7 +124,7 @@ module control_unit(in, resetn, count, r0_select, r1_select, r2_select, r3_selec
 					end
 				end
 				2'b10:
-				begin// Terceiro Ciclo
+				begin // Terceiro Ciclo
 					a_enable <= 0;
 					r_enable <= 1;
 
