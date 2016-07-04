@@ -12,20 +12,27 @@ module processor(clock, iin, resetn, outputProcessor);
 	input clock, resetn;
 	output reg [15:0] outputProcessor;
 	wire [1:0] cont;
+	wire [15:0] imediate;
+	wire [0:7] reg_enable;
+	reg [2:0] register;
 	reg [8:0] in;
 
 	counter count(clock, resetn, cont);
 
 	always @(cont == 0)
 	begin
-		in = {iin[15], iin[14], iin[13], iin[12], iin[11], iin[10], iin[9], iin[8], iin[7]};
-		
+		in = iin[15:7];
 	end
+
+	extensor ext(iin, imediate);
+	control_unit c(in, resetn, cont, imediate);
 
 	always @(cont == 1)
 	begin
-
+		register = iin[12:10];
 	end
+
+	decoder d(reg_enable, register);
 
 	always @(cont == 2)
 	begin

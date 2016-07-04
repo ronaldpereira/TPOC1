@@ -9,6 +9,9 @@ module multiplexer(bus, imediate, imediate_select, r, r_select, r0, r0_select, r
 		if(imediate_select == 1)
 			bus <= imediate;
 
+		else if(r_select == 1)
+			bus <= r;
+
 		else if(r0_select == 1)
 			bus <= r0;
 

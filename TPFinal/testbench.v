@@ -2,7 +2,7 @@
 
 module testbench;
 	reg clock = 0;
-	reg [15:0] iin;
+	reg [15:0] iin = 0;
 	reg resetn = 1;
 
 	wire [15:0] bus;
