@@ -3,7 +3,7 @@ module counter(clock, clear, out);
 	input clock, clear;
 	output reg [1:0] out = 0;
 
-	always @ (posedge clock)
+	always @ (negedge clock)
 	begin
 		case(clear)
 			1'b0:

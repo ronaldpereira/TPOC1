@@ -3,7 +3,7 @@ module control_unit(in, resetn, count, r0_select, r1_select, r2_select, r3_selec
 	input [8:0] in;
 	input [1:0] count;
 	input resetn;
-	wire [7:0] outRegistera, outRegisterb, outEnableRegister;
+	wire [7:0] outRegistera, outRegisterb, outEnable;
 	output reg r0_select, r1_select, r2_select, r3_select, r4_select, r5_select, r6_select, r7_select, r_select, immediate_select, r0_enable, r1_enable, r2_enable, r3_enable, r4_enable, r5_enable, r6_enable, r7_enable, a_enable, r_enable, clear, opSelect, negativo;
 	reg [2:0] operation, registera, registerb;
 	reg [1:0] status;
@@ -11,7 +11,7 @@ module control_unit(in, resetn, count, r0_select, r1_select, r2_select, r3_selec
 
 	decoder d1(registera, outRegistera); // Decodifica o enable do registrador a
 	decoder d2(registerb, outRegisterb); // Decodifica o enable do registrador b
-	decoder d3(registera, outEnableRegister); // Decodifica o enable do registrador a para armazenar o resultado
+	decoder d3(registera, outEnable); // Decodifica o enable do registrador a para armazenar o resultado
 
 	always @(posedge resetn)
 	begin
@@ -24,10 +24,10 @@ module control_unit(in, resetn, count, r0_select, r1_select, r2_select, r3_selec
 
 	always @(in or count)
 	begin
-		clear <= 0;
 		operation = in[8:6];
 		registera = in[5:3];
 		registerb = in[2:0];
+		clear <= 0;
 
 		case (count)
 				2'b00:
@@ -95,7 +95,7 @@ module control_unit(in, resetn, count, r0_select, r1_select, r2_select, r3_selec
 				begin // Segundo Ciclo
 					a_enable <= 1;
 
-					if((status == 2'b00 || status == 2'b10) && saida)
+					if(status == 2'b00 || (status == 2'b10 && saida))
 					begin
 						immediate_select <= 0;
 						r_select <= 0;
@@ -160,14 +160,15 @@ module control_unit(in, resetn, count, r0_select, r1_select, r2_select, r3_selec
 					immediate_select <= 0;
 					r_select <= 1;
 					status = 2'bxx;
-					r0_enable = outEnableRegister[7];
-					r1_enable = outEnableRegister[6];
-					r2_enable = outEnableRegister[5];
-					r3_enable = outEnableRegister[4];
-					r4_enable = outEnableRegister[3];
-					r5_enable = outEnableRegister[2];
-					r6_enable = outEnableRegister[1];
-					r7_enable = outEnableRegister[0];
+
+					r0_enable = outEnable[7];
+					r1_enable = outEnable[6];
+					r2_enable = outEnable[5];
+					r3_enable = outEnable[4];
+					r4_enable = outEnable[3];
+					r5_enable = outEnable[2];
+					r6_enable = outEnable[1];
+					r7_enable = outEnable[0];
 				end
 		endcase
 	end

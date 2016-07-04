@@ -22,14 +22,14 @@ module processor(clock, iin, resetn, OutputProcessor);
 	wire r0_enable, r1_enable, r2_enable, r3_enable, r4_enable, r5_enable, r6_enable, r7_enable, a_enable, r_enable;
 	wire opSelect, clear, negativo;
 
-	always @(bus)
+	always @(iin[15:13] == 3'b100)
 	begin
-		OutputProcessor <= bus;
+		OutputProcessor <= bus; // Coloca a saída no bus apenas quando a operacao é 100 -> OUT
 	end
 
 	always @(iin)
 	begin
-		in <= iin[15:7];
+		in <= iin[15:7]; // Seleciona os primeiros 9 bits para enviar para a unidade de controle
 	end
 
 	complement comp(saida, negativo, bus);
